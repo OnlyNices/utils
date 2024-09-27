@@ -1,4 +1,4 @@
-interface Paginated<T> {
+export interface Paginated<T> {
   list: Array<T>;
   pagination?: {
     page: number;
@@ -10,7 +10,7 @@ interface Paginated<T> {
   };
 }
 
-interface PaginateParams<T> {
+export interface PaginateParams<T> {
   data: Array<T>;
   count: number;
   page: number;
